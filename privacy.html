@@ -46,7 +46,7 @@
 <div class="wrap">
 
   <h1>Privacy Policy</h1>
-  <p class="subtitle">Wine360 &mdash; ultimo aggiornamento: 16 settembre 2026</p>
+  <p class="subtitle">Wine360 &mdash; ultimo aggiornamento: 14 ottobre 2026</p>
 
   <p>
     La presente Privacy Policy descrive come l'applicazione <strong>Wine360</strong>
@@ -73,7 +73,8 @@
   <p>
     L'App utilizza però alcuni servizi di terze parti, descritti al punto 3, che
     possono raccogliere dati tecnici (diagnostica dei crash, identificativi
-    pubblicitari) indipendentemente dai dati della tua cantina.
+    pubblicitari, attivazione dei codici di sblocco) indipendentemente dai dati
+    della tua cantina.
   </p>
 
   <h2>2. Permessi del dispositivo</h2>
@@ -88,8 +89,8 @@
   <p>L'App si appoggia ai seguenti servizi esterni:</p>
   <ul>
     <li>
-      <strong>Sentry</strong> (monitoraggio errori, tutte le versioni): in caso di
-      malfunzionamento, l'App invia automaticamente un report tecnico del crash
+      <strong>Sentry</strong> (monitoraggio errori, se attivo): in caso di
+      malfunzionamento, l'App può inviare automaticamente un report tecnico del crash
       (tipo di errore, modello e sistema operativo del dispositivo, versione
       dell'App) al servizio Sentry, usato esclusivamente per individuare e
       correggere bug. Questo report non contiene i dati della tua cantina.
@@ -100,6 +101,21 @@
       può raccogliere l'identificativo pubblicitario del tuo dispositivo
       (IDFA su iOS, Advertising ID su Android) e altri dati tecnici, secondo
       la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">informativa privacy di Google</a>.
+    </li>
+    <li>
+      <strong>Google Firebase &mdash; Cloud Firestore</strong> (solo se attivi un
+      codice di sblocco): se ricevi un codice personale (programma Ambassador) e
+      lo inserisci nell'App, l'App lo verifica sul database Cloud Firestore di
+      Google. Per impedire che lo stesso codice venga usato su più dispositivi,
+      vengono registrati insieme al codice un identificativo dell'App sul tuo
+      dispositivo (Android ID su Android, identificativo per il fornitore su iOS)
+      e la data di attivazione. In seguito, a ogni avvio l'App controlla se il
+      codice è ancora valido. Non vengono
+      trasmessi nome, email, posizione né i dati della tua cantina. Se non
+      inserisci alcun codice, l'App non contatta questo servizio. Il servizio è
+      fornito da Google secondo la
+      <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">informativa privacy di Firebase</a>;
+      i dati restano associati al codice finché il codice esiste.
     </li>
     <li>
       <strong>App Tracking Transparency</strong> (solo iOS, versione con
@@ -130,7 +146,9 @@
     disinstallando l'App oppure tramite la funzione "Esporta / Cancella dati"
     presente nell'App stessa. Per i dati trattati dai servizi di terze parti
     (punto 3), puoi esercitare i tuoi diritti direttamente presso Google/Sentry
-    o contattandoci all'indirizzo in fondo a questa pagina.
+    o contattandoci all'indirizzo in fondo a questa pagina. Per i codici di
+    sblocco puoi chiederci di cancellare il codice e l'identificativo del
+    dispositivo associato: in questo caso lo sblocco non sarà più valido.
   </p>
 
   <h2>5. Condivisione dei dati</h2>
@@ -138,8 +156,9 @@
     Lo sviluppatore non vende e non cede a terzi i dati della tua cantina.
     I soli dati condivisi con l'esterno sono quelli tecnici descritti al
     punto 3 (diagnostica crash con Sentry; identificativi pubblicitari con
-    Google AdMob, solo nella versione con annunci), necessari al
-    funzionamento di quei servizi.
+    Google AdMob, solo nella versione con annunci; codice di sblocco e
+    identificativo del dispositivo con Google Firebase, solo se attivi un
+    codice), necessari al funzionamento di quei servizi.
   </p>
 
   <h2>6. Sicurezza</h2>
